@@ -1,0 +1,110 @@
+//@import "../../app/bower_components/susy/sass/_susy.scss";
+// $susy: (
+//   columns: 12,
+//   gutters: 0,
+//   math: fluid,
+//   output: float,
+//   gutter-position: inside,
+//   flow: ltr,
+//   /*debug: (
+//     image: show,
+//     color: rgba(#66f, .5),
+//     output: background,
+//     toggle: top right,
+//   )*/
+// );
+// @include layout($susy);
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: $font;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $fontColor;
+  min-width: $minWidth;
+  //-webkit-font-smoothing: antialised;
+}
+.inner{
+  // @include container(320px);
+  // @include wide {
+  //   @include container(960px);
+  // }
+  max-width: $maxWidth;
+  padding: $innerPadings;
+  margin: 0 auto;
+}
+a{
+
+}
+p{
+
+}
+h1{
+  font-family: $fontBold;
+  font-size: 28px;
+  text-transform: uppercase;
+  span{
+    padding-bottom: 5px;
+    position: relative;
+  }
+}
+h2{
+
+}
+b, strong{
+  font-family: $fontBold;
+}
+
+.test{
+  //@include span(4 last);
+}
+textarea{
+  font-family: $font;
+  resize: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+input{
+  box-shadow: none;
+  border-radius: 0px;
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+}
+a, input, textarea{
+  &:focus{
+    outline: none;
+  }
+}
+::-webkit-input-placeholder {
+  
+}
+:-moz-placeholder {
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
+}
+::-moz-placeholder {
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
+}
+:-ms-input-placeholder {
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
+}
+::-ms-input-placeholder {
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
+}
+:placeholder-shown {
+  font-family: $font;
+  color: #434242;
+  font-size: 20px;
+}
+.hide{
+  display: none;
+}

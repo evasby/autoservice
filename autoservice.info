@@ -1,0 +1,6 @@
+screenshot  = screenshot.png
+name        = Autoservice theme
+description = Тема сайта Autoservice
+core        = 7.x
+stylesheets[all][] = css/all.css
+stylesheets-conditional[lt IE 9][all][] = css/all-old-ie.css
