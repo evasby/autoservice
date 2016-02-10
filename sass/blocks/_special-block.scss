@@ -1,0 +1,59 @@
+.special-block{
+	//background-color: #1d5cb3;
+	padding: 25px 30px 37px 30px;
+	position: relative;
+	header{
+		position: relative;
+		a{
+			font-family: $fontPTBold;
+			@include link(#ffc706, #ffc706);
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		}
+	}
+	&_h1{
+		color: #ffc706;
+		margin-bottom: 10px;
+	}
+	&_wrap{
+		@include clearfix;
+	}
+	&_item{
+		float: left;
+		width: 50%;
+		&:nth-child(1){
+			width: 51%;
+			margin-right: 2%;
+		}
+		&:nth-child(2){
+			width: 47%;
+			padding-left: 11px;
+		}
+	}
+	&_name{
+		color: #fff;
+		line-height: 1.25!important;
+		max-height: 62px;
+		margin-bottom: 26px!important;
+	}
+	&_date{
+		color: #fff;
+		font-family: $fontPTBold;
+		line-height: 1.15!important;
+		margin-bottom: 11px!important;
+	}
+	&_link{
+		@include link(#ffc706, #ffc706);
+	}
+	&_bac{
+		background: url('../images/special-block-bac.jpg') 0 50% no-repeat #044aab;
+		background-size: auto 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 167%;
+		height: 100%;
+		z-index: -2;
+	}
+}

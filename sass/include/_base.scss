@@ -18,12 +18,13 @@
   box-sizing: border-box;
 }
 body{
-  font-family: $font;
+  font-family: $fontPT;
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $fontColor;
   min-width: $minWidth;
   //-webkit-font-smoothing: antialised;
+  overflow-x: hidden;
 }
 .inner{
   // @include container(320px);
@@ -37,30 +38,30 @@ body{
 a{
 
 }
+i{
+  font-style: italic;
+}
 p{
 
 }
 h1{
   font-family: $fontBold;
-  font-size: 28px;
-  text-transform: uppercase;
-  span{
-    padding-bottom: 5px;
-    position: relative;
-  }
+  font-size: 30px;
+  color: $h1Color;
+  margin-bottom: 38px;
 }
 h2{
 
 }
 b, strong{
-  font-family: $fontBold;
+  font-family: $fontPTBold;
 }
 
 .test{
   //@include span(4 last);
 }
 textarea{
-  font-family: $font;
+  //font-family: $font;
   resize: none;
   box-shadow: none;
   border-radius: 0px;
@@ -81,29 +82,29 @@ a, input, textarea{
   
 }
 :-moz-placeholder {
-  font-family: $font;
+  /*font-family: $font;
   color: #434242;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 ::-moz-placeholder {
-  font-family: $font;
+  /*font-family: $font;
   color: #434242;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 :-ms-input-placeholder {
-  font-family: $font;
+  /*font-family: $font;
   color: #434242;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 ::-ms-input-placeholder {
-  font-family: $font;
+  /*font-family: $font;
   color: #434242;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 :placeholder-shown {
-  font-family: $font;
+  /*font-family: $font;
   color: #434242;
-  font-size: 20px;
+  font-size: 20px;*/
 }
 .hide{
   display: none;

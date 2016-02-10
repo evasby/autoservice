@@ -86,58 +86,60 @@ $(document).ready(function(){
           $bgobj.css({ backgroundPosition: coords });
       });
   });*/
-  /************************************************************************/
-  /*var map;
-  var myLatlng = new google.maps.LatLng(53.907179, 27.484561);
-  var myCenter = new google.maps.LatLng(53.911500, 27.484561);
-  function initialize() {
-    var styles = [
-      {
-        stylers: [
-          { hue: "#cccccc" },
-          { saturation: -120 }
-        ]
-      },{
-        featureType: "road",
-        elementType: "geometry",
-        stylers: [
-          { lightness: 100 },
-          { visibility: "simplified" }
-        ]
-      },{
-        featureType: "road",
-        elementType: "labels",
-        stylers: [
-          { visibility: "off" }
-        ]
-      }
-    ];
-    var styledMap = new google.maps.StyledMapType(styles,
-    {name: "Styled Map"});
-    var mapOptions = {
-      zoom: 15,
-      center: myCenter,
-      mapTypeControlOptions: {
-        mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
-      }
-    };
-    map = new google.maps.Map(document.getElementById('footer'),
-        mapOptions);
-    var marker = new google.maps.Marker({
-        position: myLatlng,
-        title:"Webformat",
-        //icon: '../images/footer-marker.png'
-    });
-    marker.setMap(map);
-    var contentString = '';
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
-    });
-    infowindow.open(map,marker);
-    map.mapTypes.set('map_style', styledMap);
-    map.setMapTypeId('map_style');
+    /************************************************************************/
+  if($("#map").length>0) {
+    var map;
+    var myLatlng = new google.maps.LatLng(53.940200, 27.774198);
+    var myCenter = new google.maps.LatLng(53.940200, 27.790198);
+    function initialize() {
+      /*var styles = [
+        {
+          stylers: [
+            { hue: "#cccccc" },
+            { saturation: -120 }
+          ]
+        },{
+          featureType: "road",
+          elementType: "geometry",
+          stylers: [
+            { lightness: 100 },
+            { visibility: "simplified" }
+          ]
+        },{
+          featureType: "road",
+          elementType: "labels",
+          stylers: [
+            { visibility: "off" }
+          ]
+        }
+      ];*/
+      /*var styledMap = new google.maps.StyledMapType(styles,
+      {name: "Styled Map"});*/
+      var mapOptions = {
+        zoom: 15,
+        center: myCenter,
+        /*mapTypeControlOptions: {
+          mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+        }*/
+      };
+      map = new google.maps.Map(document.getElementById('map'),
+          mapOptions);
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          title:"Еврокузов",
+          icon: '../images/map-marker.png'
+      });
+      marker.setMap(map);
+      var contentString = '<section class="map_location"><h1>Наши координаты</h1><p><b>Минский район</b><br><i>пос. Колодищи, полигон, Б1/К</i></p><p>+375 (29) <b>350 50 30</b>;<br>+375 (29) <b>350 50 27</b></p></section>';
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString
+      });
+      infowindow.open(map,marker);
+      //map.mapTypes.set('map_style', styledMap);
+      //map.setMapTypeId('map_style');
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);   
   }
-  google.maps.event.addDomListener(window, 'load', initialize);*/
   /************************************************************************/
 });
 /*

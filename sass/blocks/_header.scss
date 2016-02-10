@@ -1,0 +1,43 @@
+.header{
+	@include clearfix;
+	background-color: #ffc706;
+	padding: 34px 0 28px;
+	&_logo{
+		display: none;
+	}
+	&_menu{
+		float: left;
+		width: 59.375%;
+	}
+	&_wrap{
+		width: 40.625%;
+		float: left;
+		@include clearfix;
+	}
+	&_phone{
+		float: left;
+		width: 51.2821%;
+		padding-left: 28px;
+		p{
+			line-height: 1.2;
+			margin-bottom: 7px;
+		}
+	}
+	&_button{
+		float: left;
+		width: 48.7179%;
+		text-align: right;
+		a{
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+			font-family: $fontPTBold;
+			text-decoration: none;
+			font-size: 18px;
+			line-height: 2.3;
+			@include link(#0a0b0c, #0a0b0c);
+			border: 2px solid #0a0b0c;
+			padding: 1px 0 5px;
+		}
+	}
+}

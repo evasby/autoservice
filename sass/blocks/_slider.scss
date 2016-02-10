@@ -1,0 +1,27 @@
+.slider{
+	min-height: 700px;
+	background: url('../images/slider.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	text-align: right;
+	padding-top: 180px;
+	&_logo{
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		//display: inline-block;
+		float: right;
+		width: 314px;
+		height: 137px;
+		background: url('../images/slider-logo.png');
+		margin-bottom: 58px;
+	}
+	h1{
+		font-family: $fontBook;
+		font-size: 60px;
+		line-height: 1.2;
+		color: #fff;
+		clear: both;
+		float: right;
+		max-width: 390px;
+	}
+}

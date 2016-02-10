@@ -1,0 +1,23 @@
+.icons{
+	background-color: #ffc706;
+	padding: 34px 0 36px;
+	overflow: hidden;
+	&_list{
+		@include clearfix;
+		margin: 0 -33px;
+	}
+	&_item{
+		float: left;
+		width: 20%;
+		span{
+			font-family: $fontPTBold;
+			display: block;
+			text-align: center;
+		}
+	}
+	&_image{
+		max-width: 87px;
+		margin: 0 auto;
+		padding-bottom: 13px;
+	}
+}

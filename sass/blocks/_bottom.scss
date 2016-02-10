@@ -1,0 +1,26 @@
+.bottom{
+	background: url('../images/bottom.jpg') 50% 50% no-repeat;
+	position: relative;
+	overflow: hidden;
+	&_inner{
+		min-height: 490px;
+		max-width: $maxWidth;
+	  padding: $innerPadings;
+	  margin: 0 auto;
+	  @include clearfix;
+	  position: relative;
+	}
+	&_left{
+		float: left;
+		width: 400px;
+		padding-top: 7px;
+	}
+	&_map{
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		left: 412px;
+		top: 0;
+		width: 100%;
+	}
+}

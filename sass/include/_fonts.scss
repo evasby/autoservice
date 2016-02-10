@@ -39,7 +39,18 @@
     src: url("../fonts/PTSansRegular.eot");
     src: url("../fonts/PTSansRegular.eot?#iefix")format("embedded-opentype"),
     url("../fonts/PTSansRegular.woff") format("woff"),
-    url("../fonts/PTSansRegular.ttf") format("truetype");
+    url("../fonts/PTSansRegular.ttf") format("truetype"),
+    url('../fonts/PTSansRegular.svg#pt_sansregular') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "PTSansBold";
+    src: url("../fonts/PTSansBold.eot");
+    src: url("../fonts/PTSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansBold.woff") format("woff"),
+    url("../fonts/PTSansBold.ttf") format("truetype"),
+    url('../fonts/PTSansBold.svg#pt_sansbold') format('svg');
     font-style: normal;
     font-weight: normal;
 }

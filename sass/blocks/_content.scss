@@ -1,0 +1,19 @@
+.content{
+	padding: 46px 0 51px;
+	@include clearfix;
+	p{
+		margin-bottom: 24px;
+		line-height: 1.1;
+	}
+	&_left{
+		float: left;
+		width: 25%;
+	}
+	&_right{
+		float: right;
+		width: 75%;
+	}
+	&_h1{
+
+	}
+}

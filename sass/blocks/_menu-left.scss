@@ -1,0 +1,22 @@
+.menu-left{
+	&_item{
+		margin-bottom: 18px;
+	}
+	&_link{
+		font-family: $font;
+		@include link(#0a0b0c, #044aab);
+		text-decoration: none;
+		line-height: 1.15;
+		border-left: 2px solid #fff;
+		display: inline-block;
+		width: 192px;
+		padding: 1px 0 0 10px;
+		&:hover{
+			border-color: #044aab;
+		}
+		&__active{
+			border-color: #044aab;
+			@include link(#044aab, #044aab);
+		}
+	}
+}

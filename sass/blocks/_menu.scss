@@ -1,0 +1,14 @@
+.menu{
+	padding-top: 16px;
+	&_item{
+		display: inline-block;
+		margin-left: 33px;
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+	&_link{
+		@include link(#0a0b0c, #0a0b0c);
+		text-decoration: none;
+	}
+}
