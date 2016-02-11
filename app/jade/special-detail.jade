@@ -1,0 +1,22 @@
+extends include/html
+block title
+	title Autoservice - Акция
+block content
+	main.content
+		.inner
+			.mybreadcrumb
+				a(href="/").mybreadcrumb_link Главная
+				a(href="#").mybreadcrumb_link Акции
+				span.mybreadcrumb_item Акция
+			aside.content_left
+				h1.content_h1 Наши услуги
+				include include/menu-left
+			.content_right
+				h1 Акция
+				article.special-detail
+					header
+						img(src="images/special/special-detail.jpg", alt="")
+						p.special-detail_name Покраска 1 или 2 любых кузовных деталей вашего автомобиля в автосервисе «Еврокузов»!
+						p.special-detail_date Акция действует с 12.03.16 по 12.04.2016
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				

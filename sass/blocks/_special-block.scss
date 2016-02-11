@@ -2,6 +2,9 @@
 	//background-color: #1d5cb3;
 	padding: 25px 30px 37px 30px;
 	position: relative;
+	@include a984{
+		overflow: hidden;
+	}
 	header{
 		position: relative;
 		a{

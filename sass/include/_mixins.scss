@@ -10,6 +10,12 @@
   // }
   @media all and (max-width: 1023px) { @content; }
 }
+@mixin a768 {
+  @media all and (max-width: 768px) { @content; }
+}
+@mixin a984 {
+  @media all and (max-width: 984px) { @content; }
+}
 //*********************************************************************************/
 @mixin placeholder($color, $opacity:1){
   &::-webkit-input-placeholder { /* Safari, Chrome and Opera */

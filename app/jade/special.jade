@@ -1,0 +1,36 @@
+extends include/html
+block title
+	title Autoservice - Акции
+block content
+	main.content
+		.inner
+			.mybreadcrumb
+				a(href="/").mybreadcrumb_link Главная
+				span.mybreadcrumb_item Акции
+			aside.content_left
+				h1.content_h1 Наши услуги
+				include include/menu-left
+			.content_right
+				h1 Акции
+				.special
+					.special_item
+						.special_image
+							img(src="images/special/special-1.jpg", alt="")
+						.special_body
+							p.special_name Покраска 1 или 2 любы кузовных деталей вашего автомобиля в автосервисе «Еврокузов»!
+							p.special_date Акция действует с 12.03.16 по 12.04.2016
+							a.special_link(href="#") Подробнее
+					.special_item
+						.special_image
+							img(src="images/special/special-2.jpg", alt="")
+						.special_body
+							p.special_name Пройди ТО и получи в подарок компьютерную диагностику в нашем сервисе «Еврокузов»!
+							p.special_date Акция действует с 22.02.16 по 30.03.2016
+							a.special_link(href="#") Подробнее
+					.special_item
+						.special_image
+							img(src="images/special/special-3.jpg", alt="")
+						.special_body
+							p.special_name Покраска 1 или 2 любы кузовных деталей вашего автомобиля в автосервисе «Еврокузов»!
+							p.special_date Акция действует с 12.03.16 по 12.04.2016
+							a.special_link(href="#") Подробнее

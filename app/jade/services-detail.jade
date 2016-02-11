@@ -1,0 +1,23 @@
+extends include/html
+block title
+	title Autoservice - Ремонт мотоциклов
+block content
+	main.content
+		.inner
+			.mybreadcrumb
+				a(href="/").mybreadcrumb_link Главная
+				a(href="#").mybreadcrumb_link Услуги
+				span.mybreadcrumb_item Ремонт мотоциклов
+			aside.content_left
+				h1.content_h1 Наши услуги
+				include include/menu-left
+			.content_right
+				h1 Ремонт мотоциклов
+				article.services-detail
+					p Кузовной ремонт и окраска мототехники. С каждым днём количество мотоциклов, квадроциклов, гидроциклов и снегоходов в РБ растёт в геометрической прогрессии, а вот сервисное обслуживание этой, некогда экзотической техники до сих пор официально как следует представлено не было. Мы имеем огромный опыт в восстановлении и окраске кузовов мотоциклов и всегда готовы оказать вам услуги подобного рода.
+					p <b>Вот такой байк к нам привезли:</b>
+					p 
+						img(src="images/services/service-1.jpg", alt="")
+					p <b>А вот как мы его восстановили:</b>
+					p
+						img(src="images/services/service-2.jpg", alt="")

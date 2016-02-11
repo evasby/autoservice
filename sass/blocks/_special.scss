@@ -1,0 +1,49 @@
+.special{
+	p{
+		line-height: 1.2;
+		margin-bottom: 26px;
+	}
+	color: #000;
+
+	&_item{
+		@include clearfix;
+		position: relative;
+		padding: 50px 0 50px;
+		border-bottom: 1px solid #ddd;
+		&:first-child{
+			padding-top: 0;
+		}
+		&:last-child{
+			padding-bottom: 0;
+			border: none;
+		}
+	}
+	&_image{
+		float: left;
+		width: 51.3888%;
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&_body{
+		float: left;
+		width: 48.6111%;
+		padding: 0 0 25px 20px;
+		
+	}
+	&_name{
+
+	}
+	&_date{
+		font-family: $fontPTBold;
+	}
+	&_link{
+		position: absolute;
+		bottom: 50px;
+		right: 0;
+		font-family: $fontPTBold;
+		@include link(#044aab, #044aab);
+	}
+}

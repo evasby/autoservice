@@ -25,6 +25,9 @@ body{
   min-width: $minWidth;
   //-webkit-font-smoothing: antialised;
   overflow-x: hidden;
+  @include a768{
+    overflow-x: visible;
+  }
 }
 .inner{
   // @include container(320px);

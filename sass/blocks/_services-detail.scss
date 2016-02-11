@@ -1,0 +1,12 @@
+.services-detail{
+	p{
+		line-height: 1.2;
+		margin-bottom: 26px;
+	}
+	&_date{
+		font-family: $fontPTBold;
+	}
+	img{
+		margin-top: 20px;
+	}
+}

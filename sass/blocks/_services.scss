@@ -1,0 +1,38 @@
+.services{
+	&_item{
+		margin-bottom: 4px;
+		a{
+			@include link(#222324, #222324);
+			text-decoration: none;
+			display: inline-block;
+			padding-left: 30px;
+			position: relative;
+			&:before{
+				content: "";
+				width: 6px;
+				height: 11px;
+				position: absolute;
+				top: 5px;
+				left: 15px;
+				background: url('../images/services-arrow.png');
+			}
+			@include old-ie{
+				*zoom: expression(
+				this.runtimeStyle.zoom="1",
+				this.appendChild( document.createElement("small") ).className="services-arrow"
+				);
+				*+html &{
+					margin-right: 15px;
+				}
+				.services-arrow{
+					background: url("../images/services-arrow.png") no-repeat #fff;
+					width: 6px;
+					height: 11px;
+					position: absolute;
+					top: 5px;
+					left: 15px;
+				}
+			}
+		}
+	}
+}

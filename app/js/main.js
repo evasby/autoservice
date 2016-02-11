@@ -141,6 +141,32 @@ $(document).ready(function(){
     google.maps.event.addDomListener(window, 'load', initialize);   
   }
   /************************************************************************/
+  if($("#map2").length>0) {
+    var map2;
+    var myLatlng = new google.maps.LatLng(53.940200, 27.774198);
+    var myCenter = new google.maps.LatLng(53.940200, 27.774198);
+    function initialize() {
+      var mapOptions = {
+        zoom: 15,
+        center: myCenter,
+        scrollwheel: false,
+      };
+      map2 = new google.maps.Map(document.getElementById('map2'),
+          mapOptions);
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          title:"Еврокузов",
+          icon: '../images/map-marker.png'
+      });
+      marker.setMap(map2);
+      //var contentString = '';
+      //var infowindow = new google.maps.InfoWindow({
+          //content: contentString
+      //});
+      //infowindow.open(map,marker);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  }
 });
 /*
   By Osvaldas Valutis, www.osvaldas.info
