@@ -72,6 +72,9 @@
 	&_phone{
 		padding-left: 28px;
 		width: 51.2821%;
+		@include a984{
+			padding-left: 0px;
+		}
 	}
 	&_button{
 		width: 48.7179%;

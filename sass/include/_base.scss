@@ -37,6 +37,9 @@ body{
   max-width: $maxWidth;
   padding: $innerPadings;
   margin: 0 auto;
+  .footer &{
+    position: relative;
+  }
 }
 a{
 

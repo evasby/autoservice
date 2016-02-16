@@ -199,6 +199,8 @@ body {
   max-width: 984px;
   padding: 0 12px;
   margin: 0 auto; }
+  .footer .inner {
+    position: relative; }
 
 i {
   font-style: italic; }
@@ -2910,6 +2912,9 @@ a:focus, input:focus, textarea:focus {
   .front .header_phone {
     padding-left: 28px;
     width: 51.2821%; }
+    @media all and (max-width: 984px) {
+      .front .header_phone {
+        padding-left: 0px; } }
   .front .header_button {
     width: 48.7179%;
     margin-left: 0; }
@@ -2920,6 +2925,10 @@ a:focus, input:focus, textarea:focus {
   cursor: pointer; }
   .menu_item:first-child {
     margin-left: 0; }
+  @media all and (max-width: 984px) {
+    .menu_item {
+      margin-left: 3px;
+      font-size: 16px; } }
 
 .menu_link {
   color: #0a0b0c;
@@ -3426,3 +3435,17 @@ a:focus, input:focus, textarea:focus {
   .footer p {
     color: #fff;
     margin-bottom: 2px; }
+
+.wfs {
+  display: block;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -10px;
+  background: url("../images/wfs.png") no-repeat;
+  width: 115px;
+  height: 45px;
+  background-size: contain; }
