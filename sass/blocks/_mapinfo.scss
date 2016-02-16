@@ -1,0 +1,36 @@
+.mapinfo{
+	color: #0a0b0c;
+	position: absolute;
+	top: 80px;
+	left: 270px;
+	background-color: #fff;
+	padding: 30px;
+	&_title{
+		font-family: $fontBold;
+		font-size: 30px;
+		margin-bottom: 18px;
+	}
+	p{
+		line-height: 1.2;
+		margin-bottom: 20px;
+	}
+	&_list{
+		margin-top: -5px;
+		li{
+			display: inline-block;
+			margin-right: 2px;
+		}
+	}
+	&_link{
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: url('../images/social.png');
+		&__gg{
+			background-position: 0 -20px;
+		}
+		&__tt{
+			background-position: 0 -40px;
+		}
+	}
+}

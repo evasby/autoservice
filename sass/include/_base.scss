@@ -85,29 +85,34 @@ a, input, textarea{
   
 }
 :-moz-placeholder {
-  /*font-family: $font;
-  color: #434242;
-  font-size: 20px;*/
+  font-family: $fontPT;
+  color: #000;
+  font-size: 16px;
+  opacity: 1;
 }
 ::-moz-placeholder {
-  /*font-family: $font;
-  color: #434242;
-  font-size: 20px;*/
+  font-family: $fontPT;
+  color: #000;
+  font-size: 16px;
+  opacity: 1;
 }
 :-ms-input-placeholder {
-  /*font-family: $font;
-  color: #434242;
-  font-size: 20px;*/
+  font-family: $fontPT;
+  color: #000;
+  font-size: 16px;
+  opacity: 1;
 }
 ::-ms-input-placeholder {
-  /*font-family: $font;
-  color: #434242;
-  font-size: 20px;*/
+  font-family: $fontPT;
+  color: #000;
+  font-size: 16px;
+  opacity: 1;
 }
 :placeholder-shown {
-  /*font-family: $font;
-  color: #434242;
-  font-size: 20px;*/
+  font-family: $fontPT;
+  color: #000;
+  font-size: 16px;
+  opacity: 1;
 }
 .hide{
   display: none;

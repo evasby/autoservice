@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <head><meta charset="UTF-8"><!--[if lt IE 9]>
+    <script type='text/javascript' src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <title>Autoservice - Главная страница</title>
-    <!--build:css css/all.css-->
-    <link rel="stylesheet" href="css/all.css">
-    <!--endbuild-->
-    <!--build:css css/all-old-ie.css--><!--[if lte IE 8]>
+    <!-- -->
+    <!-- build:css css/all.css -->
+    <link rel="stylesheet" href="/css/all.css">
+    <!-- endbuild -->
+    <!--build:css css/all-old-ie.css-->
+    <!--[if lte IE 8]>
     <link rel="stylesheet" href="css/all-old-ie.css"><![endif]-->
     <!--endbuild-->
   </head>
   <body>
     <header id="header" class="header">
-      <div class="inner">		
+      <div class="inner">
         <div class="header_menu">
           <nav id="menu" class="menu">
             <ul class="menu_list">
@@ -33,7 +33,7 @@
             <p>+ 375 29 <b>350 50 30</b></p>
             <p>+ 375 29 <b>350 50 27</b></p>
           </div>
-          <div class="header_button"><a href="#" class="header_link colorbox-inline">Обратный звонок</a></div>
+          <div class="header_button"><a href="#" class="header_link colorbox-feedback">Обратный звонок</a></div>
         </div>
       </div>
     </header>
@@ -127,6 +127,17 @@
         </div>
         <div class="bottom_map">
           <div id="map" class="map"></div>
+          <div class="mapinfo">
+            <div class="mapinfo_title">Наши координаты</div>
+            <p><b>Минский район,</b><br>пос. Колодищи, полигон, Б1/K.</p>
+            <p>+375 29 <b>350 50 30</b><br>+375 29 <b>350 50 27</b></p>
+            <p><b>Присоединяйтесь!</b></p>
+            <ul class="mapinfo_list">
+              <li><a href="facebook.com" class="mapinfo_link mapinfo_link__fb"></a></li>
+              <li><a href="google.com" class="mapinfo_link mapinfo_link__gg"></a></li>
+              <li><a href="twitter.com" class="mapinfo_link mapinfo_link__tt"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -136,19 +147,24 @@
         <p><b>All Rights Reserved 2016</b></p>
       </div>
     </footer>
+    <div class="hide">
+      <div id="form1" class="form-popup">
+        <div class="form-popup_wrap form-popup_wrap__callback"><div class="form-popup_title">Обратный звонок</div>
+          <div class="form-popup_inner"><input id="edit-submitted-name--6" class="webform-hints-field form-text" type="text" maxlength="128" size="60" value="" name="submitted[name]" placeholder="Введите имя" title="Введите имя"></div>
+          <div class="form-popup_inner"><input id="edit-submitted-phone--6" class="webform-hints-field form-text required" type="text" maxlength="128" size="60" value="" name="submitted[phone]" placeholder="Ваш телефон" title="Ваш телефон" required="required"></div>
+          <div class="form-popup_button"><input id="edit-webform-ajax-submit-20" class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Заказать звонок" name="op"></div>
+        </div>
+      </div>
+    </div><!-- -->
     <!--[if lte IE 8]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <!--build:js js/vendor.js-->
-    <!--bower:js-->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
-    <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
-    <!--endbower-->
-    <!--endbuild-->
+    <!-- build:js js/vendor.js -->
+    <!-- bower:js --><!-- endbower -->
+    <!-- endbuild -->
     <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <!--build:js js/main.js-->
+    <!-- build:js js/main.js -->
     <script src="js/main.js"></script>
-    <!--endbuild-->
+    <!-- endbuild -->
   </body>
 </html>

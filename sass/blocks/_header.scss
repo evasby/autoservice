@@ -48,6 +48,9 @@
 			@include link(#0a0b0c, #0a0b0c);
 			border: 2px solid #0a0b0c;
 			padding: 1px 0 5px;
+			&:hover{
+				opacity: 0.7;
+			}
 		}
 	}
 }

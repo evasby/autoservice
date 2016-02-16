@@ -2,12 +2,13 @@
   position: absolute;
   z-index: 1;
   top: 50%;
-  right: 0px;
+  right: -30px;
+  margin-top: -15px;
   .throbber {
-    //background: transparent url('../images/loader.gif') no-repeat 0px 0px;
+    background: transparent url('../images/loader.gif') no-repeat 0px 0px;
     float: left;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     margin: 0px;
   }
 }

@@ -3,40 +3,53 @@ doctype html
 html
 	head
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<!--[if lt IE 9]>
-		script(type='text/javascript', src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-		<![endif]-->
+		//-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		|<!--[if lt IE 9]>
+		<script type='text/javascript' src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		|<![endif]-->
 		block title
 		block css
-			//build:css css/all.css
-			link(rel="stylesheet", href="css/all.css")
-			//endbuild
-			//build:css css/all-old-ie.css
-			<!--[if lte IE 8]>
+			|<!-- -->
+			|<!-- build:css css/all.css -->
+			<link rel="stylesheet" href="/css/all.css">
+			|<!-- endbuild -->
+			|<!--build:css css/all-old-ie.css-->
+			|<!--[if lte IE 8]>
 			link(rel="stylesheet", href="css/all-old-ie.css")
 			<![endif]-->
-			//endbuild
+			|<!--endbuild-->
 	body
 		//- Header
 		include header
 		block content
 		include footer
-		| #{"\r"}
-		<!--[if lte IE 8]>
+		.hide
+			#form1.form-popup
+				.form-popup_wrap.form-popup_wrap__callback
+					<div class="form-popup_title">Обратный звонок</div>
+					//-<?php $output = module_invoke('webform', 'block_view', 'client-block-20'); ?>
+					//-<?php print render($output['content']); ?>
+					.form-popup_inner
+						<input id="edit-submitted-name--6" class="webform-hints-field form-text" type="text" maxlength="128" size="60" value="" name="submitted[name]" placeholder="Введите имя" title="Введите имя">
+					.form-popup_inner
+						<input id="edit-submitted-phone--6" class="webform-hints-field form-text required" type="text" maxlength="128" size="60" value="" name="submitted[phone]" placeholder="Ваш телефон" title="Ваш телефон" required="required">
+					//- .form-popup_inner
+					//- 	.form-textarea-wrapper
+					//- 		<textarea title="Вопрос" placeholder="Вопрос" class="webform-hints-field form-textarea" id="edit-submitted-question" name="submitted[question]" cols="60" rows="5"></textarea>
+					.form-popup_button
+						<input id="edit-webform-ajax-submit-20" class="webform-submit button-primary form-submit ajax-processed" type="submit" value="Заказать звонок" name="op">
+		|<!-- -->
+		|<!--[if lte IE 8]>
 		<script src="js/respond.min.js"></script>
-		<![endif]-->
-		//build:js js/vendor.js
-		//bower:js
-		| #{"\r"}
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
-		<script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
-		//endbower
-		//endbuild
-		| #{"\r"}
+		|<![endif]-->
+		|<!-- build:js js/vendor.js -->
+		|<!-- bower:js -->
+		//- <script src="bower_components/jquery/dist/jquery.js"></script>
+		//- <script src="bower_components/jquery-colorbox/jquery.colorbox.js"></script>
+		//- <script src="bower_components/lightslider/dist/js/lightslider.min.js"></script>
+		|<!-- endbower -->
+		|<!-- endbuild -->
 		<script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-		//build:js js/main.js
-		| #{"\r"}
+		|<!-- build:js js/main.js -->
 		<script src="js/main.js"></script>
-		//endbuild
+		|<!-- endbuild -->
