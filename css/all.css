@@ -3199,6 +3199,18 @@ a:focus, input:focus, textarea:focus {
 .article p {
   line-height: 1.2; }
 
+.article ul {
+  padding-left: 25px;
+  list-style-type: disc;
+  margin-bottom: 24px; }
+  .article ul li {
+    margin-bottom: 5px;
+    font-size: 16px; }
+
+.article img {
+  max-width: 100%;
+  height: auto; }
+
 .special {
   color: #000; }
   .special p {

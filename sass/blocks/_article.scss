@@ -2,4 +2,17 @@
 	p{
 		line-height: 1.2;
 	}
+	ul{
+		padding-left: 25px;
+		list-style-type: disc;
+		margin-bottom: 24px;
+		li{
+			margin-bottom: 5px;
+			font-size: 16px;
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 }
