@@ -3507,7 +3507,7 @@ a:focus, input:focus, textarea:focus {
   text-indent: 100%;
   overflow: hidden;
   position: absolute;
-  right: 0px;
+  right: 12px;
   top: 50%;
   margin-top: -10px;
   background: url("../images/wfs.png") no-repeat;
