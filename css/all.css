@@ -2921,14 +2921,15 @@ a:focus, input:focus, textarea:focus {
 
 .menu_item {
   display: inline-block;
-  margin-left: 18px;
-  cursor: pointer; }
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 16px; }
   .menu_item:first-child {
     margin-left: 0; }
   @media all and (max-width: 984px) {
     .menu_item {
       margin-left: 3px;
-      font-size: 16px; } }
+      font-size: 14px; } }
 
 .menu_link {
   color: #0a0b0c;
@@ -2988,6 +2989,17 @@ a:focus, input:focus, textarea:focus {
       font-family: PTSansBold, sans-serif;
       display: block;
       text-align: center; }
+    .icons_item a {
+      color: #0a0b0c;
+      text-decoration: none; }
+      .icons_item a:link {
+        color: #0a0b0c; }
+      .icons_item a:visited {
+        color: #0a0b0c; }
+      .icons_item a:hover {
+        color: #444; }
+      .icons_item a:active {
+        color: #0a0b0c; }
   .icons_image {
     max-width: 87px;
     margin: 0 auto;
@@ -3142,7 +3154,7 @@ a:focus, input:focus, textarea:focus {
     position: absolute;
     left: 412px;
     top: 0;
-    width: 100%; }
+    width: 106%; }
 
 .map {
   height: 490px; }
@@ -3415,10 +3427,10 @@ a:focus, input:focus, textarea:focus {
 .mapinfo {
   color: #0a0b0c;
   position: absolute;
-  top: 80px;
-  left: 270px;
+  bottom: 0px;
+  right: 0px;
   background-color: #fff;
-  padding: 30px; }
+  padding: 30px 30px 10px; }
   .mapinfo_title {
     font-family: bebas_neuebold, sans-serif;
     font-size: 30px;

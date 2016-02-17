@@ -14,6 +14,10 @@
 			display: block;
 			text-align: center;
 		}
+		a{
+			@include link($fontColor, #444);
+			text-decoration: none;
+		}
 	}
 	&_image{
 		max-width: 87px;

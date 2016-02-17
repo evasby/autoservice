@@ -1,14 +1,15 @@
 .menu{
 	&_item{
 		display: inline-block;
-		margin-left: 18px;
+		margin-left: 8px;
 		cursor: pointer;
+		font-size: 16px;
 		&:first-child{
 			margin-left: 0;
 		}
 		@include a984{
 			margin-left: 3px;
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 	&_link{
