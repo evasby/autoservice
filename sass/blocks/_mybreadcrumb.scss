@@ -1,18 +1,21 @@
 .mybreadcrumb{
 	margin-top: -2px;
 	padding: 0 0 44px 0;
+	@include a768{
+		padding-bottom: 7px;
+	}
 	&_link{
 		@include link(#878787, #878787);
 		position: relative;
 		//text-decoration: none;
-		margin: 0 0 0 60px;
+		margin: 0 0 0 30px;
 		&:before{
 			content: "/";
 			color: #6a6767;
 			//font-size: 13px;
 			position: absolute;
 			top: 4px;
-			left: -30px;
+			left: -15px;
 		}
 		@include old-ie{
 			*zoom: expression(
@@ -28,7 +31,7 @@
 				height: 16px;
 				position: absolute;
 				top: 4px;
-				left: -30px;
+				left: -15px;
 			}
 		}
 		&:first-child {
@@ -46,14 +49,14 @@
  &_item{
    color: #878787;
    position: relative;
-   margin: 0 0 0 60px;
+   margin: 0 0 0 30px;
    &:before{
       content: "/";
 			color: #6a6767;
 			//font-size: 13px;
 			position: absolute;
 			top: 4px;
-			left: -30px;
+			left: -15px;
     }
     @include old-ie{
       *zoom: expression(
@@ -69,7 +72,7 @@
 				height: 16px;
 				position: absolute;
 				top: 4px;
-				left: -30px;
+				left: -15px;
       }
     }
 	}

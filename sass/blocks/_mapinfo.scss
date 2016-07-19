@@ -5,6 +5,9 @@
 	right: 0px;
 	background-color: #fff;
 	padding: 30px 30px 10px;
+	@include a768{
+		display: none;
+	}
 	&_title{
 		font-family: $fontBold;
 		font-size: 30px;

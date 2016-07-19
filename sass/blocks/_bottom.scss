@@ -2,6 +2,11 @@
 	background: url('../images/bottom.jpg') 50% 50% no-repeat;
 	position: relative;
 	overflow: hidden;
+	@include a768{
+		background-position: 0 0;
+		background-size: cover;
+		margin: 0 12px;
+	}
 	&_inner{
 		min-height: 490px;
 		max-width: $maxWidth;
@@ -9,11 +14,20 @@
 	  margin: 0 auto;
 	  @include clearfix;
 	  position: relative;
+	  @include a768{
+	  	padding: 0;
+	  	min-height: 0;
+	  }
 	}
 	&_left{
 		float: left;
 		width: 400px;
 		padding-top: 7px;
+		@include a768{
+			float: none;
+			width: 100%;
+			padding: $innerPadings;
+		}
 	}
 	&_map{
 		height: 100%;
@@ -22,5 +36,10 @@
 		left: 412px;
 		top: 0;
 		width: 106%;
+		@include a768{
+			position: static;
+			width: 100%;
+			display: none;
+		}
 	}
 }

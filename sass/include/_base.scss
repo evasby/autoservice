@@ -22,7 +22,7 @@ body{
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $fontColor;
-  min-width: $minWidth;
+  //min-width: $minWidth;
   //-webkit-font-smoothing: antialised;
   overflow-x: hidden;
   @include a768{
@@ -55,6 +55,10 @@ h1{
   font-size: 30px;
   color: $h1Color;
   margin-bottom: 38px;
+  @include a768{
+    text-align: center;
+    margin-bottom: 15px;
+  }
 }
 h2{
 

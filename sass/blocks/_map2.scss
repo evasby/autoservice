@@ -1,12 +1,18 @@
 .map2{
 	&_google{
 		height: 600px;
+		@include a768{
+			display: none;
+		}
 	}
 	h2{
 		font-family: $fontPTBold;
 		color: #000;
 		font-size: 24px;
 		margin: 40px 0 47px;
+		&:first-child{
+			display: none;
+		}
 	}
 	img{
 		width: 100%;

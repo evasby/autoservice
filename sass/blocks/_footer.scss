@@ -1,6 +1,11 @@
 .footer{
 	background-color: #084fb4;
 	padding: 14px 0 16px;
+	@include a768{
+		padding-bottom: 90px;
+		margin: 0 12px;
+		text-align: center;
+	}
 	p{
 		color: #fff;
 		margin-bottom: 2px;

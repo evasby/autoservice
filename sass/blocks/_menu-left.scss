@@ -1,12 +1,56 @@
 .menu-left{
+	&_inner{
+		@include a768{
+			position: fixed;
+			top: 0;
+			right: -100%;
+			width: 80%;
+			background-color: #ffc706;
+			border-left: 2px solid #0a0b0c;
+			border-bottom: 2px solid #0a0b0c;
+			padding: 52px 0 5px;
+			transition: right 0.2s;
+			z-index: 1;
+			&__open{
+				right: 0;
+				z-index: 2;
+			}		
+		}
+	}
+	&_h1{
+		cursor: pointer;
+		border: 2px solid #0a0b0c;
+		font-family: PTSansBold,sans-serif;
+    font-size: 18px;
+    line-height: 2.3;
+    padding: 1px 0 5px;
+    text-align: center;
+    width: 120px;
+    color: #0a0b0c;
+    background-color: #ffc706;
+    position: fixed;
+		top: 0;
+		right: 0;
+		transition: all 0.4s;
+		&__disable{
+			display: none;
+		}
+    &__open{
+    	right: 80%;
+    	margin-right: -120px;
+    }
+	}
 	&_item{
 		margin-bottom: 18px;
+		@include a768{
+			text-align: center;
+			margin-bottom: 3px;
+			text-align: left;
+		}
 	}
 	&_link{
-		//font-family: $font;
 		@include link(#0a0b0c, #044aab);
 		text-decoration: none;
-		//line-height: 1.15;
 		border-left: 2px solid #fff;
 		display: inline-block;
 		width: 192px;
@@ -17,6 +61,13 @@
 		&__active{
 			border-color: #044aab;
 			@include link(#044aab, #044aab);
+		}
+		@include a768{
+			border: none;
+			text-align: left;
+			font-size: 14px;
+			line-height: 1;
+			width: auto;
 		}
 	}
 }

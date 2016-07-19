@@ -1,19 +1,36 @@
 .content{
 	padding: 46px 0 51px;
 	@include clearfix;
+	@include a768{
+		padding: 15px 0;
+	}
 	p{
 		margin-bottom: 24px;
 		line-height: 1.1;
+		@include a768{
+			text-align: left;
+		}
 	}
 	&_left{
 		float: left;
 		width: 25%;
+		@include a768{
+			float: none;
+			width: auto;
+		}
 	}
 	&_right{
 		float: right;
 		width: 75%;
+		@include a768{
+			float: none;
+			width: 100%;
+		}
 	}
 	&_h1{
-
+		@include a768{
+			text-align: center;
+			margin-bottom: 10px;
+		}
 	}
 }

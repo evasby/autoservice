@@ -3,36 +3,36 @@ var gulp = require('gulp'),
     wiredep = require('wiredep').stream,
     useref = require('gulp-useref'),
     gulpif = require('gulp-if'),
-    uglify = require('gulp-uglify'),
-    minifyCss = require('gulp-minify-css'),
-    clean = require('gulp-clean'),
+    //uglify = require('gulp-uglify'),
+    //minifyCss = require('gulp-minify-css'),
+    //clean = require('gulp-clean'),
     sass= require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    livereload = require('gulp-livereload'),
-    connect = require('gulp-connect'),
+    //livereload = require('gulp-livereload'),
+    //connect = require('gulp-connect'),
     plumberNotifier = require('gulp-plumber-notifier'),
     plumber = require('gulp-plumber'),
-    wait = require('gulp-wait'),
-    imagemin = require('gulp-imagemin'),
-    jade = require('gulp-jade');
+    wait = require('gulp-wait');
+    //imagemin = require('gulp-imagemin'),
+    //jade = require('gulp-jade');
 
 // server connect
-gulp.task('connect', function() {
+/*gulp.task('connect', function() {
   connect.server({
     root: 'app',
     livereload: true
   });
-});
+});*/
 
 // html
-gulp.task('html', function() {
+/*gulp.task('html', function() {
   gulp.src('app/index.html')
   .pipe(connect.reload())
   .pipe(notify('HTML - Done!'));
-})
+})*/
 
 // jade
-gulp.task('jade', function() {
+/*gulp.task('jade', function() {
   gulp.src('app/jade/*.jade')
     .pipe(jade({
       pretty: true
@@ -40,17 +40,17 @@ gulp.task('jade', function() {
     .pipe(gulp.dest('app'))
     .pipe(connect.reload())
     .pipe(notify('Jade - Done!'));
-});
+});*/
 
 // jadephp
-gulp.task('jadephp', function() {
+/*gulp.task('jadephp', function() {
   gulp.src('app/jade/drupal/*.jade')
     .pipe(jadephp({
       pretty: true
     }))
     .pipe(gulp.dest('app'))
     .pipe(notify('Jade - Done!'));
-});
+});*/
 
 // Error Notification
 function errorAlert(error){
@@ -72,63 +72,39 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('css'))
     .pipe(gulp.dest('app/css'))
-    .pipe(connect.reload())
+    .pipe(gulp.dest('d:/OpenServer/domains/evrokuzov/sites/all/themes/autoservice/css'))
+    //.pipe(connect.reload())
     .pipe(notify('CSS - Done!'));
 });
 
 // Clean
-gulp.task('clean', function () {
+/*gulp.task('clean', function () {
     return gulp.src('dist', {read: false})
         .pipe(clean());
-});
+});*/
 // CleanJS
-gulp.task('cleanJS', function () {
+/*gulp.task('cleanJS', function () {
     return gulp.src('dist/js', {read: false})
         .pipe(clean());
-});
-// imageMin
-gulp.task('imageMin', function () {
-    return gulp.src('app/images/**/*.*')
-      .pipe(imagemin())
-      .pipe(gulp.dest('for drupal/images'));
-});
+});*/
+
 //JS
-gulp.task('js', function () {
+/*gulp.task('js', function () {
     return gulp.src('ignore/js/main.js')
       .pipe(gulpif('*.js', uglify()))
       .pipe(gulp.dest('ignore/js/min'));
-});
+});*/
 
-// Fonts
-gulp.task('fonts', function() {
-    return gulp.src(['app/fonts/**/*.*'])
-      .pipe(gulp.dest('for drupal/fonts'));
-});
 
-// Build
-gulp.task('build', function () {
-    return gulp.src('./app/*.html')
-      .pipe(useref())
-      //.pipe(gulpif('*.js', uglify()))
-      //.pipe(gulpif('*.css', minifyCss({compatibility: 'ie7'})))
-      .pipe(gulp.dest('for drupal'));
-});
 
-// Bower
-gulp.task('bower', function () {
-  gulp.src('./app/index.html')
-    .pipe(wiredep({
-      directory : "app/bower_components"
-    }))
-    .pipe(gulp.dest('./app'));
-});
 
 gulp.task('watch', function () {
   gulp.watch('sass/**/*.scss', ['css']);
-  gulp.watch('bower.json', ['bower']);
-  gulp.watch('app/index.html', ['html']);
-  gulp.watch('app/jade/**/*.jade', ['jade']);
+  //gulp.watch('bower.json', ['bower']);
+  //gulp.watch('app/index.html', ['html']);
+  //gulp.watch('app/jade/**/*.jade', ['jade']);
 });
 
 // default
-gulp.task('default', ['connect', 'jade', 'html', 'css', 'watch']);
+//gulp.task('default', ['connect', 'jade', 'html', 'css', 'watch']);
+gulp.task('default', ['css', 'watch']);

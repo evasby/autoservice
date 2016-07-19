@@ -14,8 +14,11 @@
 			padding-top: 0;
 		}
 		&:last-child{
-			padding-bottom: 0;
+			padding-bottom: 15px;
 			border: none;
+		}
+		@include a768{
+			padding-bottom: 15px;
 		}
 	}
 	&_image{
@@ -26,12 +29,25 @@
 			width: 100%;
 			height: auto;
 		}
+		@include a768{
+			float: none;
+			width: auto;
+			margin: 0 auto;
+			max-width: 370px;
+		}
 	}
 	&_body{
 		float: left;
 		width: 48.6111%;
 		padding: 0 0 25px 20px;
-		
+		@include a768{
+			float: none;
+			width: 100%;
+			padding: 10px 0 0;
+			p{
+				margin-bottom: 5px;
+			}
+		}
 	}
 	&_name{
 
@@ -45,5 +61,9 @@
 		right: 0;
 		font-family: $fontPTBold;
 		@include link(#044aab, #044aab);
+		@include a768{
+			bottom: -8px;
+			left: 0;
+		}
 	}
 }

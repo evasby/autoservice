@@ -2,6 +2,10 @@
 	&_wrap{
 		width: 339px;
 		padding: 45px 38px 42px 38px;
+		@include a768{
+			width: 240px;
+			padding: 10px;
+		}
 	}
 	&_title{
 		font-family: $fontBold;

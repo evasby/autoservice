@@ -13,6 +13,9 @@
 			position: absolute;
 			right: 0;
 			bottom: 0;
+			@include a768{
+				bottom: 6px;
+			}
 		}
 	}
 	&_h1{
@@ -28,10 +31,23 @@
 		&:nth-child(1){
 			width: 51%;
 			margin-right: 2%;
+			@include a768{
+				width: 100%;
+				margin: 0;
+			}
 		}
 		&:nth-child(2){
 			width: 47%;
 			padding-left: 11px;
+			@include a768{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		@include a768{
+			float: none;
+			width: 100%;
 		}
 	}
 	&_name{
@@ -39,6 +55,11 @@
 		line-height: 1.25!important;
 		max-height: 62px;
 		margin-bottom: 26px!important;
+		@include a768{
+			max-height: none;
+			line-height: 1!important;
+			margin-bottom: 8px!important;
+		}
 	}
 	&_date{
 		color: #fff;
