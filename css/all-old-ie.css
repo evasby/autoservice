@@ -2847,6 +2847,9 @@ a:focus, input:focus, textarea:focus {
   @media all and (max-width: 768px) {
     .header {
       padding: 15px 0; } }
+  @media all and (max-width: 425px) {
+    .header {
+      padding-top: 57px; } }
   .header_logo {
     float: left; }
     .header_logo a {
@@ -2976,6 +2979,51 @@ a:focus, input:focus, textarea:focus {
         width: 190px;
         float: none;
         margin: 0 auto; } }
+
+.menu_close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 15px;
+  top: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  display: none; }
+  @media all and (max-width: 768px) {
+    .menu_close {
+      display: block; } }
+
+.menu_close:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px); }
+
+.menu_close:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+  -ms-transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(7px, -7px); }
+
+.menu_close:after, .menu_close:before {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-border-radius: 2px;
+  border-radius: 2px; }
 
 @media all and (max-width: 768px) {
   .menu {
@@ -3206,6 +3254,43 @@ a:focus, input:focus, textarea:focus {
       text-align: center;
       margin-bottom: 10px; } }
 
+.menu-left_close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  display: none; }
+  @media all and (max-width: 768px) {
+    .menu-left_close {
+      display: block; } }
+
+.menu-left_close:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+  -ms-transform: rotate(45deg) translate(7px, 7px);
+  transform: rotate(45deg) translate(7px, 7px); }
+
+.menu-left_close:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 23px;
+  background-color: #000;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
+  -ms-transform: rotate(-45deg) translate(7px, -7px);
+  transform: rotate(-45deg) translate(7px, -7px); }
+
 @media all and (max-width: 768px) {
   .menu-left_inner {
     position: fixed;
@@ -3238,9 +3323,13 @@ a:focus, input:focus, textarea:focus {
   top: 0;
   right: 0;
   -webkit-transition: all 0.4s;
-  transition: all 0.4s; }
-  .menu-left_h1__disable {
-    display: none; }
+  transition: all 0.4s;
+  display: none; }
+  @media all and (max-width: 768px) {
+    .menu-left_h1 {
+      display: block; }
+      .menu-left_h1__disable {
+        display: none; } }
   .menu-left_h1__open {
     right: 80%;
     margin-right: -120px; }

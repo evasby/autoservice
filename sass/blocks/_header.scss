@@ -5,6 +5,9 @@
 	@include a768{
 		padding: 15px 0;
 	}
+	@include a425{
+		padding-top: 57px;
+	}
 	&_logo{
 		float: left;
 		a{

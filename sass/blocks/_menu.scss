@@ -1,4 +1,50 @@
 .menu{
+	&_close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 12px;
+    //background-color: #fff; 
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    @include a768{
+    	display: block;
+    }
+  }
+  &_close:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background-color: #000;
+    height: 3px;
+    width: 100%;
+    //.deftop-menu_toggle__on &{
+      transform: rotate(45deg) translate(7px, 7px);
+      //transform-origin: 50% 50%;
+    //}
+  }
+  &_close:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 23px;
+    background-color: #000;
+    height: 3px;
+    width: 100%;
+    //.deftop-menu_toggle__on &{
+      transform: rotate(-45deg) translate(7px, -7px);
+      //transform-origin: 50% 50%;
+    //}
+  }
+  
+  &_close:after, &_close:before{
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
 	@include a768{
 		position: fixed;
 		left: -100%;
